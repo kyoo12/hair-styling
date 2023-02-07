@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg1: #F5D1C3;
+    --bg2: #E38F73;
+    --body: #5F9595;
+    --brand: #EFBC6B;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+a {
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+.link-more {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+
+.link-more .icon {
+    transition: all 0.4s ease;
+}
+
+.link-more:hover .icon {
+    transform: translateX(8px);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    position: relative;
+}
+
+/*INTRO*/
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro h1 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro h6 {
+    color: var(--brand);
+}
+
+.intro p {
+    max-width: 500px;
+    margin: auto;
+
+}
+
+.cta-btns {
+    margin-top: 60px;
+}
+
+/*NAVBAR*/
+.navbar {
+    background: linear-gradient(to bottom, #323232, rgba(27, 31, 52, 0.3));
+}
+
+.navbar .navbar-nav .nav-link.activ {
+    color: var(--brand) !important;
+}
+
+.navbar-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+}
+
+/*Hero*/
+#hero {
+    background: linear-gradient(to right, #F5D1C3, rgba(27, 31, 52, 0.0)), url(../img/cover_1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#hero p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/*BTN*/
+.btn {
+    padding: 16px, 16px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.4 ease;
+    border-radius: 5;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand {
+    border-color: var(--brand);
+    background-color: transparent;
+    color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+
+/*ABOUT*/
+
+#about .signature {
+    width: unset;
+}
+
+/* #about {
+    position: relative;
+} */
+
+#about h1 {
+    /* margin-top: 16px; */
+    margin-bottom: 24px;
+}
+
+#about h6 {
+    color: var(--brand);
+    margin-bottom: 16px;
+
+}
+
+#about::after {
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*SERVICE*/
+#services {
+    background: var(--bg2);
+}
+
+#services .services .cotent {
+    padding: 32px;
+}
+
+#services .services p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/*MILESTONE*/
+#milestone {
+    background: linear-gradient(to right, rgba(208, 96, 76, 0.8), rgba(208, 96, 76, 0.3)), url(../img/cover_2.jpg);
+    background-size: cover;
+    background-position: center;
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center; */
+}
+
+/* #milestone h1 {
+    color: var(--brand);
+} */
+
+/*FEATURE*/
+/* #features {
+    background-color: var(--bg2);
+} */
+
+.feature {
+    display: flex;
+}
+
+.feature .icon-feature {
+    font-size: 36px;
+    color: var(--bg2);
+    line-height: 1;
+    margin-right: 16px;
+}
+
+.feature p {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+/*SOCIAL ICONS*/
+
+.social-links a {
+    width: 42px;
+    height: 32px;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    background-color: var(--bg1);
+    color: var(--brand);
+}
+
+/*TEAM*/
+#team {
+    background-color: var(--bg2);
+}
+
+.team-member {
+    position: relative;
+}
+
+.team-member .social-links {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    top: 30px;
+}
+
+/*REVIEWS*/
+#reviews {
+    background-color: var(--bg1);
+}
+
+.review {
+    padding: 32px;
+    background-color: var(--bg2);
+    position: relative;
+}
+
+.review .icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--bg1);
+    border-radius: 100px;
+    position: absolute;
+    right: 32px;
+}
+
+.review img {
+    width: 60px;
+    border-radius: 100px;
+}
+
+/*YOU TUBE*/
+
+#blog {
+    background-color: var(--bg2);
+}
+
+.blog-post {
+    position: relative;
+}
+
+.blog-post .date {
+    width: 100px;
+    height: 100px;
+    background-color: var(--brand);
+    color: var(--bg1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.blog-post .day {
+    width: 32px;
+line-height: 1;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: var(--bg1);
+}
+
+.blog-post .year {
+    color: var(--bg1);
+}
+
+/*BOOKING*/
+
+#booking {
+    background: linear-gradient(to right, rgba(245, 209, 195, 0.8), rgba(245, 209, 195, 0.8)), url(../img/cover_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#boking form {
+    background-color: var(--bg1);
+    padding: 32px;
+}
+
+#boking form .form-control {
+    background-color: var(--bg2);
+    border-radius: 0;
+    margin-top: 16px;
+    border-color: var(--bg2);
+    border: 2px solid var(--bg2);
+    color: var(--body);
+}
+
+#boking form input{
+    height: 58px;
+}
+
+#boking form .form-control:focus {
+    box-shadow: none;
+    border-left-color: var(--brand);
+}
+
+/*Footer*/
+footer {
+    padding-top: 5px;
+    background-color: var(--bg2);
+}
+
+footer .social-links {
+    display: flex;
+}
+
+footer .social-links a {
+    margin-right: 5px;
+}
